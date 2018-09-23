@@ -50,7 +50,12 @@ class Student
   end
 
   def self.all_students_below_12
+    sql = <<-SQL
+    SELECT *
+    FROM students
+    WHERE grade BETWEEN 0 AND 12
 
+    SQL
   end
 
   def save
