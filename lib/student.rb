@@ -68,7 +68,7 @@ class Student
     WHERE grade = 10
     LIMIT ?
     SQL
-    end
+  end
 
 
   def save
